@@ -1,0 +1,164 @@
+.iMac {
+  display: flex;
+  justify-content: center;
+  
+
+  position: relative;
+  
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(img/imac.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+
+.myPhoto {
+  --myPhotoSize: 15vw;
+  --xPosition: 1.98;
+  --yPosition: 6;
+
+  position: absolute;
+  top: calc((100vh - var(--myPhotoSize)) / var(--yPosition));
+  left: calc((100vw - var(--myPhotoSize)) / var(--xPosition));
+
+  width: var(--myPhotoSize);
+  
+  height: var(--myPhotoSize);
+  
+  background-image: url(img/myPhoto.jpg);
+  background-size: cover;
+  
+  border-radius: 50%;
+}
+
+.screen {
+  position: relative;
+  top: 59px;
+
+  height: 540px;
+  width: 960px;
+
+  white-space: pre;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+
+  font-size: 100px;
+  font-family: Roboto, sans-serif;
+  color: #e2e2e2;
+
+  text-overflow: clip;
+}
+
+.myName {
+  top: 55%;
+  
+  animation: nameMove 18s linear infinite;
+}
+
+.iAm {
+  left: 38%;
+  top: 100%;
+
+  visibility: hidden;
+
+  animation: iMove 18s linear 3s infinite;
+}
+
+.frontend {
+  left: 38%;
+  top: 70%;
+
+  opacity: 0;
+
+  height: 150px;
+  width: 350px;
+  
+  background-image: url(img/FRONTEND\ engineer.svg.);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation: frontendMove 18s linear 8s infinite;
+}
+
+@keyframes nameMove {
+  0% {
+    left: 5%;
+    visibility: visible;
+  }
+
+  10% {
+    left: 5%;
+    visibility: visible;
+  }
+
+  20% {
+    left: 100%;
+    visibility: hidden;
+  }
+
+  90% {
+    left: -100%;
+    visibility: hidden; 
+  }
+
+  100% {
+    left: 5%;
+    visibility: visible;
+  }
+}
+
+@keyframes iMove {
+  0% {
+    top: 100%;
+    visibility: hidden;
+  }
+
+  10% {
+    top: 55%;
+    visibility: visible;
+  }
+
+  20% {
+    top: 55%;
+    visibility: visible;
+  }
+
+  30% {
+    top: 100%;
+    visibility: hidden;
+  }
+
+  100% {
+    top: 100%;
+    visibility: hidden; 
+  }
+}
+
+@keyframes frontendMove {
+  0% {
+     opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0; 
+  }
+}
