@@ -1,10 +1,9 @@
 .iMac {
   display: flex;
   justify-content: center;
-  
 
   position: relative;
-  
+
   width: 100vw;
   height: 100vh;
 
@@ -12,8 +11,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  
 }
 
 .myPhoto {
@@ -26,12 +23,12 @@
   left: calc((100vw - var(--myPhotoSize)) / var(--xPosition));
 
   width: var(--myPhotoSize);
-  
+
   height: var(--myPhotoSize);
-  
+
   background-image: url(img/myPhoto.jpg);
   background-size: cover;
-  
+
   border-radius: 50%;
 }
 
@@ -58,7 +55,7 @@
 
 .myName {
   top: 55%;
-  
+
   animation: nameMove 18s linear infinite;
 }
 
@@ -79,8 +76,8 @@
 
   height: 150px;
   width: 350px;
-  
-  background-image: url(img/FRONTEND-engineer.png.);
+
+  background-image: url(img/FRONTEND-engineer.png);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -105,7 +102,7 @@
 
   90% {
     left: -100%;
-    visibility: hidden; 
+    visibility: hidden;
   }
 
   100% {
@@ -137,13 +134,13 @@
 
   100% {
     top: 100%;
-    visibility: hidden; 
+    visibility: hidden;
   }
 }
 
 @keyframes frontendMove {
   0% {
-     opacity: 0;
+    opacity: 0;
   }
 
   20% {
@@ -159,6 +156,6 @@
   }
 
   100% {
-    opacity: 0; 
+    opacity: 0;
   }
 }
